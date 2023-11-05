@@ -1,0 +1,91 @@
+/* date-picker.css */
+.date-picker {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+#selected-date {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+#show-picker {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#date-picker-popup {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+#date-picker-popup.hidden {
+  display: none;
+}
+
+.calendar {
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#current-month {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.day {
+  padding: 5px;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.empty-day {
+  visibility: hidden;
+  }
