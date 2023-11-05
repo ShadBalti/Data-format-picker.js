@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="date-picker.css">
+  <title>Date Picker Example</title>
+</head>
+<body>
+  <div class="date-picker">
+    <input type="text" id="selected-date" readonly>
+    <button id="show-picker">Select Date</button>
+    <div id="date-picker-popup" class="hidden">
+      <div class="calendar">
+        <div class="header">
+          <button id="prev-month">&lt;</button>
+          <span id="current-month"></span>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="days">
+          <div class="day">Sun</div>
+          <div class="day">Mon</div>
+          <div class="day">Tue</div>
+          <div class="day">Wed</div>
+          <div class="day">Thu</div>
+          <div class="day">Fri</div>
+          <div class="day">Sat</div>
+        </div>
+        <div id="calendar-dates" class="calendar-dates"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="date-format.js"></script>
+  <script src="date-picker.js"></script>
+</body>
+</html>
+            
